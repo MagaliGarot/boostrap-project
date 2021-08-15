@@ -1,0 +1,97 @@
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #bf2a31;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+}
+
+.home {
+  background: url("src/images/fondbleuetrouge.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#logo {
+  width: 50px;
+}
+
+body {
+  height: 900px;
+}
+
+.containerBody .containerMaecenas {
+  background-color: #232c35;
+}
+
+.containerBody .containerMaecenas .description {
+  font-size: 1.2rem !important;
+}
+
+.containerBody .containerMaecenas .description .descriptionText {
+  padding-left: 76px !important;
+  padding-right: 76px !important;
+}
+
+.containerBody .containerMaecenas .description .pictureDescription {
+  width: 34rem;
+  margin-bottom: 6rem;
+}
+
+.containerBody .card {
+  height: 100% !important;
+  background-color: #f8f8f8;
+}
+
+.containerBody .card .textColorBlueDark {
+  color: #1a3044;
+  margin-bottom: 4rem;
+}
+
+.containerBody .card .btn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: #bf2a31;
+  border: none;
+}
+
+.containerBody .card .btn:hover {
+  background-color: #1679a3;
+}
+
+.containerBody .card .btn:focus {
+  background-color: #1679a3;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (300px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 300px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1300px;
+  width: 80%;
+  height: auto;
+  margin: 30px auto;
+  grid-gap: 10px;
+  /* background-color: #232c35; */
+}
+
+.grid-item {
+  width: 200px;
+  height: 200px;
+  background: url("src/images/testsitebootstrap2.png");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  margin: 30px auto;
+}
+/*# sourceMappingURL=style.css.map */

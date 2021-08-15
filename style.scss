@@ -1,0 +1,102 @@
+$red : #bf2a31;
+$blueDark : rgb(26, 48, 68);
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    color: $red;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+}
+
+.home{
+    background: url("src/images/fondbleuetrouge.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#logo{
+    width: 50px;
+}
+
+body{
+    height: 900px;
+}
+
+.containerBody{
+    .containerMaecenas{
+        background-color: #232c35;
+        .description{
+            font-size: 1.2rem !important;
+            .descriptionText{
+                padding-left: 76px !important;
+                padding-right: 76px !important;
+            }
+            .pictureDescription{
+                width: 34rem;
+                margin-bottom: 6rem;
+            }
+        }
+    }
+    .card{
+        height: 100% !important;
+        background-color:rgb(248, 248, 248);
+        .textColorBlueDark{
+            color:$blueDark;
+            margin-bottom: 4rem;
+        }
+        .btn{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            background-color:$red;
+            border: none;
+        
+            &:hover{
+                background-color: #1679a3;
+            }
+            &:focus{
+                background-color: #1679a3;
+            }
+        }
+    }
+}
+
+.grid{
+    display: grid;
+    //grid-aera: nomdelelement -> rajouter nom sur les élements
+    //grid-template-areas: 
+    //"logo logo logo logo"
+    //"nav nav nav nav"
+    //"content content content feature"
+    //"footer footer footer footer"
+
+    //repeat(nombre de colonnes, taille)
+    //ex 4 colonnes repeat(4, 1fr), ou 1fr 1fr 1fr 1fr
+    //pour changer les proportions : 2fr 4fr 1fr 1fr
+    grid-template-columns: repeat(auto-fill, 300px);
+    //row -> par ex 3 lignes
+    //grid-template-rows: repeat(4, 1fr);
+    //pour changer la taille des lignes -> grid-template-rows: 1fr 0.5fr 8fr 0.5fr;
+    justify-content: center;
+    max-width: 1300px;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+    //espace entre les colonnes
+    grid-gap: 10px;
+    /* background-color: #232c35; */
+}
+.grid-item{
+    width: 200px;
+    height: 200px;
+    background: url("src/images/testsitebootstrap2.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    margin: 30px auto;
+}
