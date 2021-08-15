@@ -1,4 +1,4 @@
-# Test Bootsrap
+# Test Bootstrap
 https://getbootstrap.com/
 
 # 🔗 Lien vers le projet : 
